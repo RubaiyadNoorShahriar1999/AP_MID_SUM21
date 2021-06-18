@@ -1,0 +1,67 @@
+﻿@model LabPerformance.Models.student
+
+@{
+    ViewBag.Title = "Student";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<!--<form action="/Home/Registration"  class="d-flex justify-content-center">
+    <input type="text" class="form-control" name="Name" placeholder="Name">-->
+@*@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })*@
+<!--<input type="text" class="form-control" name="ID" placeholder="ID">
+    <input type="date" class="form-control" name="Dob" placeholder="Date">
+    <input type="text" class="form-control" name="Credit" placeholder="Credit">
+    <input type="text" class="form-control" name="CGPA" placeholder="CGPA">
+    <input type="text" class="form-control" name="Dept_ID" placeholder="Dept_ID">
+    <input type="submit" class="btn btn-danger">
+
+</form>-->
+<div class="cotainer">
+    <h1>Persons</h1>
+    <table class="table table-condensed">
+        <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Dob</th>
+            <th>Credit</th>
+            <th>CGPA</th>
+            <th>Dept_ID</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>@Model.Name</td>
+            <td>@Model.ID</td>
+            <td>@Model.DOB</td>
+            <td>@Model.Credit</td>
+            <td>@Model.Credit</td>
+            <td>@Model.Dept_ID</td>
+            <td><a href="/Person/Edit" class="btn btn-default">Edit</a></td>
+            <td><a href="/Person/Delete" class="btn btn-danger">Delete</a></td>
+
+        </tr>
+        @*<tr>
+            <td>1</td>
+            <td>Tanvir</td>
+            <td>5646-45-4</td>
+            <td>Dhaka</td>
+            <td></td>
+            <td></td>
+            <td><a href="/Person/Edit" class="btn btn-default">Edit</a></td>
+            <td><a href="/Person/Delete" class="btn btn-danger">Delete</a></td>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tanvir</td>
+            <td>5646-45-4</td>
+            <td>Dhaka</td>
+            <td></td>
+            <td></td>
+            <td><a href="/Person/Edit" class="btn btn-default">Edit</a></td>
+            <td><a href="/Person/Delete" class="btn btn-danger">Delete</a></td>
+
+        </tr>*@
+    </table>
+</div>
