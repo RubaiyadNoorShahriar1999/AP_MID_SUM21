@@ -5,14 +5,14 @@ using System.Web;
 
 namespace LabPerformance.Models
 {
-    public class student
+    public class Student
     {
         public string Name { get; set; }
         public string ID { get; set; }
 
         public string DOB { get; set; }
-        public string Credit { get; set; }
-        public string CGPA { get; set; }
-        public string Dept_ID { get; set; }
+        public int Credit { get; set; }
+        public double CGPA { get; set; }
+        public int Dept_ID { get; set; }
     }
 }
